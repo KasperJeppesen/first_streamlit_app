@@ -43,7 +43,7 @@ streamlit.dataframe(fruityvice_normalized)
 #New Section about Fruit load list
 fruit_load_list_input = streamlit.text_input('What fruit would you like to add?')
 streamlit.write('The user entered ', fruit_load_list_input)
-streamlit.dataframe(fruit_load_list_input)
+streamlit.append.my_data_rows(fruit_load_list_input, ignore_index=True)
 
 streamlit.header("The fruit load list contains:")
 streamlit.dataframe(my_data_rows)
