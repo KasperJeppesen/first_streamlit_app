@@ -45,8 +45,9 @@ fruit_load_list = streamlit.text_input('What fruit would you like to add?')
 streamlit.write('The user entered ', fruit_load_list)
 
 #my_data_rows = streamlit.add_rows(fruit_load_list, ignore_index=True)
-
 #my_data_rows.add_rows(fruit_load_list)
 
 streamlit.header("The fruit load list contains:")
 streamlit.dataframe(my_data_rows)
+
+#session_state.df = session_state.df.append({'Random': random_value}, ignore_index=True)
