@@ -46,7 +46,7 @@ streamlit.write('The user entered ', fruit_load_list)
 
 #my_data_rows = streamlit.add_rows(fruit_load_list, ignore_index=True)
 
-my_data_rows.add_rows(fruit_load_list)
+#my_data_rows.add_rows(fruit_load_list)
 
 streamlit.header("The fruit load list contains:")
 streamlit.dataframe(my_data_rows)
