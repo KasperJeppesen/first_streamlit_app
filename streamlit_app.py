@@ -40,5 +40,5 @@ fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
 
 streamlit.dataframe(fruityvice_normalized)
 
-streamlit.text("The fruit load list contains:")
+streamlit.header("The fruit load list contains:")
 streamlit.text(my_data_row)
