@@ -39,13 +39,11 @@ fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
 
 streamlit.dataframe(fruityvice_normalized)
 
+streamlit.header("The fruit load list contains:")
+streamlit.dataframe(my_data_rows)
+
+
 #New Section about Fruit load list
 fruit_load_list_input = streamlit.text_input('What fruit would you like to add?')
 streamlit.write('The user entered ', fruit_load_list_input)
 
-streamlit.header("The fruit load list contains:")
-streamlit.dataframe(my_data_rows)
-
-#Add text input 
-add_fruit = streamlit.text_input('What fruit would you like to add?')
-streamlit.write('Thank you for adding ', add_fruit)
